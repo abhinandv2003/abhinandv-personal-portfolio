@@ -31,19 +31,24 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'glass py-4 shadow-lg' : 'bg-transparent py-6'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass py-4' : 'bg-transparent py-6'
+        }`}
     >
-      <div className="container flex justify-between items-center">
+      <div className="container mx-auto px-6 flex justify-between items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-2xl font-bold font-sans cursor-pointer"
+          className="text-2xl font-bold tracking-wide cursor-pointer text-white"
         >
-          <Link to="hero" smooth={true} duration={500} offset={-70}>
-            Abhinand<span className="text-blue-500">.</span>V
+          <Link
+            to="hero"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 truncate"
+          >
+            Abhinand.V
           </Link>
         </motion.div>
 
@@ -61,7 +66,8 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className="text-gray-300 hover:text-white hover:text-blue-400 transition-colors cursor-pointer text-sm uppercase tracking-wider font-medium"
+                className={`cursor-pointer text-sm font-medium transition-colors duration-300 ${scrolled ? 'text-gray-300 hover:text-primary' : 'text-gray-300 hover:text-white'
+                  }`}
               >
                 {link.name}
               </Link>
@@ -87,9 +93,9 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass"
+            className="md:hidden glass border-t border-white/10"
           >
-            <div className="flex flex-col items-center py-4 space-y-4">
+            <div className="flex flex-col items-center py-6 space-y-6">
               {navLinks.map((link, index) => (
                 <Link
                   key={index}
@@ -98,7 +104,7 @@ const Navbar = () => {
                   duration={500}
                   offset={-70}
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-blue-400 text-lg font-medium cursor-pointer"
+                  className="text-white hover:text-primary text-xl font-medium cursor-pointer transition-colors"
                 >
                   {link.name}
                 </Link>

@@ -6,17 +6,19 @@ export default {
     ],
     theme: {
         extend: {
-            container: {
-                center: true,
-                padding: '2rem',
-            },
             colors: {
-                dark: '#0f172a',
-                primary: '#3b82f6',
-                secondary: '#8b5cf6',
+                dark: '#0a0a0a',
+                card: '#111111',
+                primary: '#00d2ff',
+                secondary: '#3a7bd5',
+                accent: '#8b5cf6',
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Outfit', 'sans-serif'],
+            },
+            backgroundImage: {
+                'gradient-primary': 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+                'gradient-text': 'linear-gradient(to right, #00d2ff, #8b5cf6)',
             }
         },
     },

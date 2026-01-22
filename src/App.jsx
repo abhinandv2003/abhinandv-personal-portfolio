@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-[#0f172a] min-h-screen text-white">
+    <div className="min-h-screen text-white font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
       <Navbar />
       <Hero />
       <About />
@@ -19,9 +19,15 @@ function App() {
       <Contact />
 
       {/* Footer */}
-      <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/5 bg-[#0f172a]">
-        <p>© {new Date().getFullYear()} Abhinand V. All rights reserved.</p>
-        <p className="mt-2">Built with React & Tailwind aesthetics</p>
+      <footer className="py-8 text-center border-t border-white/5 relative z-10">
+        <div className="container mx-auto px-6">
+          <p className="text-gray-500 text-sm">
+            © {new Date().getFullYear()} <span className="text-gray-300 font-medium">Abhinand V</span>. All rights reserved.
+          </p>
+          <p className="mt-2 text-gray-600 text-xs">
+            Built with <span className="text-cyan-500">React</span> & <span className="text-blue-500">Tailwind CSS</span>
+          </p>
+        </div>
       </footer>
     </div>
   );
