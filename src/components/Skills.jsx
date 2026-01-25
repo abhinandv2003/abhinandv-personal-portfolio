@@ -42,7 +42,7 @@ const Skills = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="bg-white/5 p-8 rounded-3xl border border-white/5 hover:border-cyan-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 group backdrop-blur-sm"
+                            className="card-hover p-8 group backdrop-blur-sm"
                         >
                             <h3 className="text-xl font-bold mb-6 text-white border-l-4 border-cyan-500 pl-4 group-hover:text-cyan-400 transition-colors">
                                 {category.category}
@@ -51,7 +51,7 @@ const Skills = () => {
                                 {category.skills.map((skill, i) => (
                                     <span
                                         key={i}
-                                        className="px-4 py-2 bg-white/5 rounded-full text-sm font-medium text-gray-400 border border-white/5 hover:border-cyan-500/50 hover:bg-cyan-500/10 hover:text-cyan-400 transition-all duration-300 cursor-default"
+                                        className="px-4 py-2 bg-white/5 rounded-full text-sm font-medium text-gray-400 border border-white/5 group-hover:bg-cyan-500/10 group-hover:text-cyan-400 transition-all duration-300 cursor-default"
                                     >
                                         {skill}
                                     </span>

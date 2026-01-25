@@ -45,7 +45,7 @@ const Services = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="bg-white/5 p-8 rounded-3xl text-center border border-white/5 hover:border-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 group backdrop-blur-sm"
+                            className="card-hover p-8 text-center group backdrop-blur-sm"
                         >
                             <div className="mb-6 inline-block p-4 rounded-2xl bg-white/5 text-purple-400 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 shadow-lg shadow-purple-900/20">
                                 {service.icon}

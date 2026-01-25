@@ -53,7 +53,7 @@ const Projects = () => {
                             whileHover={{ y: -10 }}
                             transition={{ duration: 0.3, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="bg-white/5 rounded-3xl overflow-hidden border border-white/10 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 group backdrop-blur-sm"
+                            className="card-hover group backdrop-blur-sm overflow-hidden"
                         >
                             {/* Project Preview Placeholder */}
                             <div className="h-52 bg-[#0f0f0f] relative overflow-hidden group-hover:bg-[#0f0f0f]/80 transition-all duration-500 flex items-center justify-center border-b border-white/5">
