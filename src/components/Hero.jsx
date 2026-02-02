@@ -71,7 +71,7 @@ const Hero = () => {
                         href="/ABHINAND-V-RESUME.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-outline flex items-center justify-center gap-2 text-lg"
+                        className="btn btn-outline flex items-center justify-center gap-2 text-lg rounded-full"
                     >
                         Download Resume
                         <Download size={20} />
