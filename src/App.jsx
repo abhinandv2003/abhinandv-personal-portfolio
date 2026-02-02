@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -13,6 +14,16 @@ function App() {
   return (
     <ThemeProvider>
       <div className="min-h-screen text-white font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
+        <Helmet>
+          <title>Abhinand V | Software Engineer & Web Developer</title>
+          <meta name="description" content="Portfolio of Abhinand V, an aspiring Software Engineer and Web Developer passionate about creating innovative solutions." />
+          <meta name="keywords" content="Abhinand V, Software Engineer, Web Developer, Portfolio, React, Full Stack" />
+          <meta property="og:title" content="Abhinand V | Software Engineer & Web Developer" />
+          <meta property="og:description" content="Portfolio of Abhinand V, an aspiring Software Engineer and Web Developer passionate about creating innovative solutions." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://abhinandv.online/" />
+          <link rel="canonical" href="https://abhinandv.online/" />
+        </Helmet>
         <SecretMenu />
         <Navbar />
         <Hero />
